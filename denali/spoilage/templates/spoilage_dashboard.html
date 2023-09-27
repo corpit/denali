@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau Embed</title>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+</head>
+<body>
+    <div id="tableauViz"></div>
+    <script type="text/javascript">
+        var vizDiv = document.getElementById('tableauViz');
+        var vizURL = "YOUR_TABLEAU_DASHBOARD_URL_HERE";
+        var options = {
+            width: '800px',
+            height: '700px',
+            hideToolbar: true,
+            hideTabs: true
+        };
+        var viz = new tableau.Viz(vizDiv, vizURL, options);
+    </script>
+</body>
+</html>
